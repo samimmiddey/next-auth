@@ -18,7 +18,7 @@ const Dashboard = () => {
         if (!user) {
             router.push('/login');
         }
-    });
+    }, [user, router]);
 
     return (
         <Typography sx={textStyle}>
